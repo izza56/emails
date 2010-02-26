@@ -1,0 +1,1739 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-02-24 11:36:42) [GET]
+  [4;36;1mSQL (297.0ms)[0m   [0;1mSHOW TABLES[0m
+Completed in 625ms (View: 63, DB: 297) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-02-24 14:35:51) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+Completed in 578ms (View: 47, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-02-24 14:35:52) [GET]
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+Completed in 250ms (View: 15, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#index (for 127.0.0.1 at 2010-02-24 15:37:21) [GET]
+Rendering emailer/index
+Completed in 2656ms (View: 2656, DB: 0) | 200 OK [http://localhost/Emailer/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#sendmail (for 127.0.0.1 at 2010-02-24 15:38:19) [POST]
+  Parameters: {"commit"=>"Send", "authenticity_token"=>"kVbfYDBmYXeDWX7/dX9U8ozPdsct56gQb7X68lvgcXE=", "email"=>{"message"=>"test", "recipient"=>"shakescazenmlv@mailinator.com", "subject"=>"first subject"}}
+
+ActionView::MissingTemplate (Missing template emailer/contact.erb in view path app/views):
+  app/controllers/emailer_controller.rb:7:in `sendmail'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#index (for 127.0.0.1 at 2010-02-24 15:39:21) [GET]
+Rendering emailer/index
+Completed in 109ms (View: 109, DB: 0) | 200 OK [http://localhost/Emailer/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#sendmail (for 127.0.0.1 at 2010-02-24 15:39:39) [POST]
+  Parameters: {"commit"=>"Send", "authenticity_token"=>"kVbfYDBmYXeDWX7/dX9U8ozPdsct56gQb7X68lvgcXE=", "email"=>{"message"=>"test one", "recipient"=>"shakescazenmlv@mailinator.com", "subject"=>"Test from ruby"}}
+
+ActionView::MissingTemplate (Missing template emailer/contact.erb in view path app/views):
+  app/controllers/emailer_controller.rb:7:in `sendmail'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#index (for 127.0.0.1 at 2010-02-24 15:40:58) [GET]
+Rendering emailer/index
+Completed in 110ms (View: 110, DB: 0) | 200 OK [http://localhost/emailer/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#sendmail (for 127.0.0.1 at 2010-02-24 15:41:09) [POST]
+  Parameters: {"commit"=>"Send", "authenticity_token"=>"kVbfYDBmYXeDWX7/dX9U8ozPdsct56gQb7X68lvgcXE=", "email"=>{"message"=>"ruby", "recipient"=>"shakescazenmlv@mailinator.com", "subject"=>"test from ruby"}}
+Sent mail to message, ruby, recipient, shakescazenmlv@mailinator.com, subject, test from ruby
+
+Date: Wed, 24 Feb 2010 15:41:09 +0000
+From: no-reply@yourdomain.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi!
+
+You have received a new email message from sender@yourdomain.com with a title
+
+This is title
+and following is the message:
+
+
+Thanks
+
+Errno::ECONNREFUSED (No connection could be made because the target machine actively refused it. - connect(2)):
+  C:/Ruby/lib/ruby/1.8/timeout.rb:62:in `timeout'
+  C:/Ruby/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  app/controllers/emailer_controller.rb:7:in `sendmail'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (313.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#sendmail (for 127.0.0.1 at 2010-02-24 15:48:34) [POST]
+  Parameters: {"commit"=>"Send", "authenticity_token"=>"kVbfYDBmYXeDWX7/dX9U8ozPdsct56gQb7X68lvgcXE=", "email"=>{"message"=>"ruby blah", "recipient"=>"shakescazenmlv@mailinator.com", "subject"=>"test from ruby"}}
+Sent mail to message, ruby blah, recipient, shakescazenmlv@mailinator.com, subject, test from ruby
+
+Date: Wed, 24 Feb 2010 15:48:34 +0000
+From: no-reply@yourdomain.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi!
+
+You have received a new email message from sender@yourdomain.com with a title
+
+This is title
+and following is the message:
+
+
+Thanks
+
+Errno::ECONNREFUSED (No connection could be made because the target machine actively refused it. - connect(2)):
+  C:/Ruby/lib/ruby/1.8/timeout.rb:62:in `timeout'
+  C:/Ruby/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  app/controllers/emailer_controller.rb:7:in `sendmail'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#sendmail (for 127.0.0.1 at 2010-02-24 15:48:51) [POST]
+  Parameters: {"commit"=>"Send", "authenticity_token"=>"kVbfYDBmYXeDWX7/dX9U8ozPdsct56gQb7X68lvgcXE=", "email"=>{"message"=>"ruby blah", "recipient"=>"epic_swell@yahoo.ie", "subject"=>"test from ruby"}}
+Sent mail to message, ruby blah, recipient, epic_swell@yahoo.ie, subject, test from ruby
+
+Date: Wed, 24 Feb 2010 15:48:51 +0000
+From: no-reply@yourdomain.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi!
+
+You have received a new email message from sender@yourdomain.com with a title
+
+This is title
+and following is the message:
+
+
+Thanks
+
+Errno::ECONNREFUSED (No connection could be made because the target machine actively refused it. - connect(2)):
+  C:/Ruby/lib/ruby/1.8/timeout.rb:62:in `timeout'
+  C:/Ruby/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  app/controllers/emailer_controller.rb:7:in `sendmail'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (250.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#index (for 127.0.0.1 at 2010-02-24 15:55:10) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: sendmail):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#index (for 127.0.0.1 at 2010-02-24 15:55:58) [GET]
+Rendering emailer/index
+Completed in 172ms (View: 172, DB: 0) | 200 OK [http://localhost/emailer/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#sendmail (for 127.0.0.1 at 2010-02-24 15:56:12) [POST]
+  Parameters: {"commit"=>"Send", "authenticity_token"=>"kVbfYDBmYXeDWX7/dX9U8ozPdsct56gQb7X68lvgcXE=", "email"=>{"message"=>"test 1", "recipient"=>"epic_swell@yahoo.ie", "subject"=>"test"}}
+Sent mail to message, test 1, recipient, epic_swell@yahoo.ie, subject, test
+
+Date: Wed, 24 Feb 2010 15:56:12 +0000
+From: no-reply@yourdomain.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi!
+
+You have received a new email message from sender@yourdomain.com with a title
+
+This is title
+and following is the message:
+
+
+Thanks
+
+Errno::ECONNREFUSED (No connection could be made because the target machine actively refused it. - connect(2)):
+  C:/Ruby/lib/ruby/1.8/timeout.rb:62:in `timeout'
+  C:/Ruby/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  app/controllers/emailer_controller.rb:7:in `sendmail'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (219.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#index (for 127.0.0.1 at 2010-02-24 16:09:35) [GET]
+Rendering emailer/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/emailer/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#sendmail (for 127.0.0.1 at 2010-02-24 16:09:44) [POST]
+  Parameters: {"commit"=>"Send", "authenticity_token"=>"kVbfYDBmYXeDWX7/dX9U8ozPdsct56gQb7X68lvgcXE=", "email"=>{"message"=>"test message", "recipient"=>"epic_swell@yahoo.ie", "subject"=>"test"}}
+Sent mail to epic_swell@yahoo.ie
+
+Date: Wed, 24 Feb 2010 16:09:44 +0000
+From: no-reply@yourdomain.com
+To: epic_swell@yahoo.ie
+Subject: test
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi!
+
+You have received a new email message from sender@yourdomain.com with a title
+
+This is title
+and following is the message:
+test message
+
+Thanks
+
+Errno::ECONNREFUSED (No connection could be made because the target machine actively refused it. - connect(2)):
+  C:/Ruby/lib/ruby/1.8/timeout.rb:62:in `timeout'
+  C:/Ruby/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  app/controllers/emailer_controller.rb:8:in `sendmail'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#index (for 127.0.0.1 at 2010-02-24 16:21:22) [GET]
+Rendering emailer/index
+Completed in 297ms (View: 297, DB: 0) | 200 OK [http://localhost/emailer/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EmailerController#sendmail (for 127.0.0.1 at 2010-02-24 16:21:33) [POST]
+  Parameters: {"commit"=>"Send", "authenticity_token"=>"kVbfYDBmYXeDWX7/dX9U8ozPdsct56gQb7X68lvgcXE=", "email"=>{"message"=>"another test", "recipient"=>"epic_swell@yahoo.ie", "subject"=>"test"}}
+Sent mail to epic_swell@yahoo.ie
+
+Date: Wed, 24 Feb 2010 16:21:33 +0000
+From: no-reply@yourdomain.com
+To: epic_swell@yahoo.ie
+Subject: test
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi!
+
+You have received a new email message from sender@yourdomain.com with a title
+
+This is title
+and following is the message:
+another test
+
+Thanks
+Completed in 5187ms (View: 0, DB: 0) | 200 OK [http://localhost/emailer/sendmail]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (110.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1390.0ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (594.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100224171415)
+  [4;36;1mSQL (171.0ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `crypted_password` varchar(255), `password_salt` varchar(255), `persistence_token` varchar(255), `login_count` int(11), `last_request_at` datetime, `last_login_at` datetime, `current_login_at` datetime, `last_login_ip` varchar(255), `current_login_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (297.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100224171415')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (219.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (125.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-02-24 17:51:08) [GET]
+  [4;36;1mSQL (32.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 219ms (View: 16, DB: 47) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-24 17:53:37) [GET]
+  Parameters: {"action"=>"show", "id"=>"index", "controller"=>"users"}
+Rendering template within layouts/users
+Rendering users/show
+
+ActionView::TemplateError (undefined method `login' for nil:NilClass) on line #3 of app/views/users/show.html.erb:
+1: <p>
+2:   <b>Login:</b>
+3:   <%=h @user.login %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/users/show.html.erb:3
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (219.0ms)
+Rendered rescues/_request_and_response (62.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-24 17:53:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"show", "controller"=>"users"}
+Rendering template within layouts/users
+Rendering users/show
+
+ActionView::TemplateError (undefined method `login' for nil:NilClass) on line #3 of app/views/users/show.html.erb:
+1: <p>
+2:   <b>Login:</b>
+3:   <%=h @user.login %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/users/show.html.erb:3
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (422.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-02-25 17:27:08) [GET]
+  [4;36;1mSQL (390.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (844.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 1672ms (View: 62, DB: 1672) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-02-25 17:27:10) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 141ms (View: 0, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-25 17:27:24) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (359.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/user_sessions/new.html.erb:
+1: <h1>Login</h1>
+2: 
+3: <% form_for @user_session, :url => user_session_path do |f| %>
+4:   <%= f.error_messages %>
+5:   <%= f.label :login %><br />
+6:   <%= f.text_field :login %><br />
+
+    app/views/user_sessions/new.html.erb:3
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (297.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#show (for 127.0.0.1 at 2010-02-25 17:28:48) [GET]
+  Parameters: {"action"=>"show", "controller"=>"user_sessions"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-25 17:28:57) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (125.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/user_sessions/new.html.erb:
+1: <h1>Login</h1>
+2: 
+3: <% form_for @user_session, :url => user_session_path do |f| %>
+4:   <%= f.error_messages %>
+5:   <%= f.label :login %><br />
+6:   <%= f.text_field :login %><br />
+
+    app/views/user_sessions/new.html.erb:3
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (140.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-25 17:32:21) [GET]
+
+ActionController::RoutingError (No route matches "/user_session/users" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-25 17:32:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/user_sessions/new.html.erb:
+1: <h1>Login</h1>
+2: 
+3: <% form_for @user_session, :url => user_session_path do |f| %>
+4:   <%= f.error_messages %>
+5:   <%= f.label :login %><br />
+6:   <%= f.text_field :login %><br />
+
+    app/views/user_sessions/new.html.erb:3
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (328.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-25 17:32:55) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/users" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-25 17:33:11) [GET]
+
+ActionController::RoutingError (No route matches "/user_session/users" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-25 17:33:22) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/user_sessions/new.html.erb:
+1: <h1>Login</h1>
+2: 
+3: <% form_for @user_session, :url => user_session_path do |f| %>
+4:   <%= f.error_messages %>
+5:   <%= f.label :login %><br />
+6:   <%= f.text_field :login %><br />
+
+    app/views/user_sessions/new.html.erb:3
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-25 17:36:37) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 1922ms (View: 1735, DB: 32) | 200 OK [http://localhost/user_session/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-02-25 17:36:48) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"password"=>"[FILTERED]", "login"=>"test", "remember_me"=>"0"}, "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (140.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (266.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'test') LIMIT 1[0m
+Rendering user_sessions/new
+Completed in 1297ms (View: 16, DB: 406) | 200 OK [http://localhost/user_session]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-02-25 17:37:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (63.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/new
+Rendered users/_form (47.0ms)
+Completed in 312ms (View: 187, DB: 63) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-25 17:38:15) [GET]
+  Parameters: {"action"=>"show", "id"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 125ms (DB: 47) | 302 Found [http://localhost/users/show]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-25 17:38:15) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 78ms (View: 15, DB: 16) | 200 OK [http://localhost/user_session/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#edit (for 127.0.0.1 at 2010-02-25 17:38:21) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"user_sessions"}
+
+ActionController::UnknownAction (No action responded to edit. Actions: create, destroy, and new):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-02-25 17:39:01) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mUser Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/new
+Rendered users/_form (0.0ms)
+Completed in 172ms (View: 31, DB: 78) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-02-25 17:40:27) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "login"=>"epic_swell@yahoo.ie"}, "commit"=>"Register", "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"users"}
+  [4;35;1mUser Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (125.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'epic_swell@yahoo.ie') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'bd8e7835ce1a2b608fa580b8f3598d22c76b9ba227def6eb21aeb7c13ef89dc5a9c3886381e1c05427edf3aa49ef9b913a27d3856aea62d9c65e43270903b582') LIMIT 1[0m
+  [4;35;1mUser Create (812.0ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `login`, `last_login_ip`, `created_at`) VALUES(NULL, '2010-02-25 17:40:29', '2010-02-25 17:40:29', 'd68a98010822453a56c0fe80c31eb30fcf8f5f5e00596cacad44347a075919b047c95ee2791240a9a43b52561879c6244c42e576bb6d3e1f9b6b522eeba94c06', '127.0.0.1', 'DuYJEcicLHlu3xIAthwn', '2010-02-25 17:40:28', 'bd8e7835ce1a2b608fa580b8f3598d22c76b9ba227def6eb21aeb7c13ef89dc5a9c3886381e1c05427edf3aa49ef9b913a27d3856aea62d9c65e43270903b582', 1, 'epic_swell@yahoo.ie', NULL, '2010-02-25 17:40:29')[0m
+  [4;36;1mSQL (407.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/show
+Completed in 4047ms (DB: 1422) | 302 Found [http://localhost/account]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-25 17:40:31) [GET]
+  Parameters: {"action"=>"show", "id"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (109.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (171.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bd8e7835ce1a2b608fa580b8f3598d22c76b9ba227def6eb21aeb7c13ef89dc5a9c3886381e1c05427edf3aa49ef9b913a27d3856aea62d9c65e43270903b582') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (359.0ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-02-25 17:40:32', `last_request_at` = '2010-02-25 17:40:32' WHERE `id` = 1[0m
+  [4;35;1mSQL (250.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 1282ms (View: 63, DB: 889) | 200 OK [http://localhost/users/show]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-02-25 17:41:21) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bd8e7835ce1a2b608fa580b8f3598d22c76b9ba227def6eb21aeb7c13ef89dc5a9c3886381e1c05427edf3aa49ef9b913a27d3856aea62d9c65e43270903b582') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-02-25 17:41:21', `last_request_at` = '2010-02-25 17:41:21' WHERE `id` = 1[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/edit
+Rendered users/_form (0.0ms)
+Completed in 297ms (View: 93, DB: 110) | 200 OK [http://localhost/account/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-25 17:41:42) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bd8e7835ce1a2b608fa580b8f3598d22c76b9ba227def6eb21aeb7c13ef89dc5a9c3886381e1c05427edf3aa49ef9b913a27d3856aea62d9c65e43270903b582') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-02-25 17:41:42', `last_request_at` = '2010-02-25 17:41:42' WHERE `id` = 1[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 250ms (View: 0, DB: 156) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-02-25 17:42:16) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bd8e7835ce1a2b608fa580b8f3598d22c76b9ba227def6eb21aeb7c13ef89dc5a9c3886381e1c05427edf3aa49ef9b913a27d3856aea62d9c65e43270903b582') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-02-25 17:42:16', `last_request_at` = '2010-02-25 17:42:16' WHERE `id` = 1[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/user_session/new
+Completed in 250ms (DB: 125) | 302 Found [http://localhost/user_sessions/destroy]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-25 17:42:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (63.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 172ms (View: 31, DB: 63) | 200 OK [http://localhost/user_session/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-02-25 17:45:05) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"password"=>"[FILTERED]", "login"=>"epic_swell@yahoo.ie", "remember_me"=>"0"}, "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'epic_swell@yahoo.ie') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (125.0ms)[0m   [0mUPDATE `users` SET `login_count` = 2, `last_login_at` = '2010-02-25 17:40:28', `last_login_ip` = '127.0.0.1', `updated_at` = '2010-02-25 17:45:05', `last_request_at` = '2010-02-25 17:45:05', `current_login_at` = '2010-02-25 17:45:05' WHERE `id` = 1[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 312ms (DB: 250) | 302 Found [http://localhost/user_session]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-25 17:45:06) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (47.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-02-25 17:45:06', `last_request_at` = '2010-02-25 17:45:06' WHERE `id` = 1[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 266ms (View: 16, DB: 188) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (125.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-02-26 10:06:37) [GET]
+  [4;36;1mSQL (219.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (375.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 954ms (View: 32, DB: 719) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-02-26 10:06:38) [GET]
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 234ms (View: 15, DB: 31) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-26 10:07:52) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (516.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (328.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (125.0ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-02-26 10:07:57', `last_request_at` = '2010-02-26 10:07:57' WHERE `id` = 1[0m
+  [4;36;1mSQL (172.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 6016ms (DB: 1172) | 302 Found [http://localhost/user_session/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-26 10:08:00) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (156.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (63.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (31.0ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-02-26 10:08:00', `last_request_at` = '2010-02-26 10:08:00' WHERE `id` = 1[0m
+  [4;35;1mSQL (125.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 781ms (View: 297, DB: 375) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-02-26 10:08:07) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (63.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (266.0ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-02-26 10:08:08', `last_request_at` = '2010-02-26 10:08:08' WHERE `id` = 1[0m
+  [4;36;1mSQL (187.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/edit
+Rendered users/_form (125.0ms)
+Completed in 984ms (View: 375, DB: 547) | 200 OK [http://localhost/account/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-26 10:08:13) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (32.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-02-26 10:08:13', `last_request_at` = '2010-02-26 10:08:13' WHERE `id` = 1[0m
+  [4;35;1mSQL (125.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 281ms (View: 16, DB: 204) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100224171415)
+Migrating to AddUsersPasswordResetFields (20100226104223)
+  [4;36;1mSQL (1140.0ms)[0m   [0;1mALTER TABLE `users` ADD `perishable_token` varchar(255) DEFAULT '' NOT NULL[0m
+  [4;35;1mSQL (281.0ms)[0m   [0mALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL[0m
+  [4;36;1mSQL (594.0ms)[0m   [0;1mCREATE INDEX `index_users_on_perishable_token` ON `users` (`perishable_token`)[0m
+  [4;35;1mSQL (188.0ms)[0m   [0mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100226104223')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2010-02-26 11:33:32) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+Rendering password_resets/new
+Completed in 516ms (View: 516, DB: 0) | 200 OK [http://localhost/password_resets/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-02-26 11:40:07) [GET]
+  [4;36;1mSQL (47.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 297ms (View: 31, DB: 63) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2010-02-26 11:40:24) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+Rendering password_resets/new
+Completed in 281ms (View: 281, DB: 0) | 200 OK [http://localhost/password_resets/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-02-26 11:40:29) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"password_resets", "email"=>"blah"}
+  [4;36;1mUser Columns (188.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (31.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'blah') LIMIT 1[0m
+Rendering password_resets/new
+Completed in 437ms (View: 0, DB: 219) | 200 OK [http://localhost/password_resets]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-02-26 11:40:37) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"password_resets", "email"=>"epic_swell@yahoo.ie"}
+  [4;36;1mUser Columns (93.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (93.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'epic_swell@yahoo.ie') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (31.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'KlHFtM230CGnivq8UEgg', `updated_at` = '2010-02-26 11:40:39' WHERE `id` = 1[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+Sent mail to epic_swell@yahoo.ie
+
+Date: Fri, 26 Feb 2010 11:40:39 +0000
+To: epic_swell@yahoo.ie
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+# app/views/notifier/password_reset_instructions.erb
+A request to reset your password has been made.
+If you did not make this request, simply ignore this email.
+If you did make this request just click the link below:
+
+http://localhost/password_resets/KlHFtM230CGnivq8UEgg/edit
+
+If the above URL does not work try copying and pasting it into your browser.
+If you continue to have problem please feel free to contact us.
+
+
+Errno::ECONNREFUSED (No connection could be made because the target machine actively refused it. - connect(2)):
+  C:/Ruby/lib/ruby/1.8/timeout.rb:62:in `timeout'
+  C:/Ruby/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  app/models/user.rb:7:in `deliver_password_reset_instructions!'
+  app/controllers/password_resets_controller.rb:10:in `create'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (266.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-02-26 11:47:07) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"password_resets", "email"=>"blah"}
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'blah') LIMIT 1[0m
+Rendering password_resets/new
+Completed in 156ms (View: 16, DB: 15) | 200 OK [http://localhost/password_resets]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-02-26 11:47:26) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"password_resets", "email"=>"epic_swell@yahoo.ie"}
+  [4;35;1mUser Columns (407.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (187.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'epic_swell@yahoo.ie') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'RirTnrrFyDvOneSPG_YQ', `updated_at` = '2010-02-26 11:47:27' WHERE `id` = 1[0m
+  [4;35;1mSQL (203.0ms)[0m   [0mCOMMIT[0m
+Sent mail to epic_swell@yahoo.ie
+
+Date: Fri, 26 Feb 2010 11:47:27 +0000
+To: epic_swell@yahoo.ie
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+# app/views/notifier/password_reset_instructions.erb
+A request to reset your password has been made.
+If you did not make this request, simply ignore this email.
+If you did make this request just click the link below:
+
+http://localhost/password_resets/RirTnrrFyDvOneSPG_YQ/edit
+
+If the above URL does not work try copying and pasting it into your browser.
+If you continue to have problem please feel free to contact us.
+
+Redirected to http://localhost:3000/
+Completed in 7875ms (DB: 797) | 302 Found [http://localhost/password_resets]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2010-02-26 11:53:25) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+Rendering password_resets/new
+Completed in 219ms (View: 203, DB: 0) | 200 OK [http://localhost/password_resets/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-02-26 11:53:29) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"password_resets", "email"=>"blah"}
+  [4;36;1mUser Columns (46.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'blah') LIMIT 1[0m
+Rendering password_resets/new
+Completed in 266ms (View: 32, DB: 46) | 200 OK [http://localhost/password_resets]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-02-26 11:53:34) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"password_resets", "email"=>"epic_swell@yahoo.ie"}
+  [4;36;1mUser Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'epic_swell@yahoo.ie') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'GszsesQbPuRpK-uSWnhY', `updated_at` = '2010-02-26 11:53:36' WHERE `id` = 1[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCOMMIT[0m
+Sent mail to epic_swell@yahoo.ie
+
+Date: Fri, 26 Feb 2010 11:53:36 +0000
+To: epic_swell@yahoo.ie
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+A request to reset your password has been made.
+If you did not make this request, simply ignore this email.
+If you did make this request just click the link below:
+
+http://localhost:3000/password_resets/GszsesQbPuRpK-uSWnhY/edit
+
+If the above URL does not work try copying and pasting it into your browser.
+If you continue to have problem please feel free to contact us.
+
+Redirected to http://localhost:3000/
+Completed in 4047ms (DB: 172) | 302 Found [http://localhost/password_resets]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit (for 127.0.0.1 at 2010-02-26 11:55:59) [GET]
+  Parameters: {"action"=>"edit", "id"=>"GszsesQbPuRpK-uSWnhY", "controller"=>"password_resets"}
+
+ActionController::UnknownAction (No action responded to edit. Actions: create and new):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit (for 127.0.0.1 at 2010-02-26 12:24:07) [GET]
+  Parameters: {"action"=>"edit", "id"=>"GszsesQbPuRpK-uSWnhY", "controller"=>"password_resets"}
+  [4;36;1mUser Columns (46.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM `users` WHERE (perishable_token = 'GszsesQbPuRpK-uSWnhY' and updated_at > '2010-02-26 12:14:07') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:load_user_using_perishable_token] rendered_or_redirected.
+Completed in 1140ms (DB: 62) | 302 Found [http://localhost/password_resets/GszsesQbPuRpK-uSWnhY/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2010-02-26 12:29:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+Rendering password_resets/new
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/password_resets/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-02-26 12:29:50) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"password_resets", "email"=>"epic_swell@yahoo.ie"}
+  [4;36;1mUser Columns (94.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'epic_swell@yahoo.ie') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'eAAxCyyYvYR_2VE6vS5b', `updated_at` = '2010-02-26 12:29:51' WHERE `id` = 1[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCOMMIT[0m
+Sent mail to epic_swell@yahoo.ie
+
+Date: Fri, 26 Feb 2010 12:29:51 +0000
+To: epic_swell@yahoo.ie
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+A request to reset your password has been made.
+If you did not make this request, simply ignore this email.
+If you did make this request just click the link below:
+
+http://localhost:3000/password_resets/eAAxCyyYvYR_2VE6vS5b/edit
+
+If the above URL does not work try copying and pasting it into your browser.
+If you continue to have problem please feel free to contact us.
+
+Redirected to http://localhost:3000/
+Completed in 3265ms (DB: 157) | 302 Found [http://localhost/password_resets]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit (for 127.0.0.1 at 2010-02-26 12:30:34) [GET]
+  Parameters: {"action"=>"edit", "id"=>"eAAxCyyYvYR_2VE6vS5b", "controller"=>"password_resets"}
+  [4;35;1mUser Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (perishable_token = 'eAAxCyyYvYR_2VE6vS5b' and updated_at > '2010-02-26 12:20:35') LIMIT 1[0m
+Rendering password_resets/edit
+Completed in 156ms (View: 47, DB: 31) | 200 OK [http://localhost/password_resets/eAAxCyyYvYR_2VE6vS5b/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#update (for 127.0.0.1 at 2010-02-26 12:30:43) [PUT]
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Update my password and log me in", "action"=>"update", "_method"=>"put", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "id"=>"eAAxCyyYvYR_2VE6vS5b", "controller"=>"password_resets"}
+  [4;35;1mUser Columns (32.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (perishable_token = 'eAAxCyyYvYR_2VE6vS5b' and updated_at > '2010-02-26 12:20:43') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (62.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'cbdd141e984bd3e33d1683264d16fad8970901a3cff303df4c7bd9a2ec848c59f04f356fd139883004fa96272658df5b546fe8287f660e6a815df73fe949f18e' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `login_count` = 3, `persistence_token` = 'cbdd141e984bd3e33d1683264d16fad8970901a3cff303df4c7bd9a2ec848c59f04f356fd139883004fa96272658df5b546fe8287f660e6a815df73fe949f18e', `perishable_token` = 'Ap5emBnBxRppOCAzo6ud', `crypted_password` = '4283cf6dce796668781fb3d82ece7c11fce34e15d850f4b0ddcbf77df4678457eaae191cdcbb14bd58b833a6b7a38cef2a52e5c46ef17ed6d05131c0b61c0fb3', `last_login_at` = '2010-02-25 17:45:05', `updated_at` = '2010-02-26 12:30:44', `last_request_at` = '2010-02-26 12:30:44', `current_login_at` = '2010-02-26 12:30:44', `password_salt` = '7mPEEV5W8R8wrnytrHPC' WHERE `id` = 1[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 500ms (DB: 172) | 302 Found [http://localhost/password_resets/eAAxCyyYvYR_2VE6vS5b]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-26 12:30:44) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'nvzjRAr-alJEWpMLZNhV', `updated_at` = '2010-02-26 12:30:44', `last_request_at` = '2010-02-26 12:30:44' WHERE `id` = 1[0m
+  [4;36;1mSQL (79.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 344ms (View: 140, DB: 125) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-02-26 12:31:10) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;35;1mUser Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'mE31Q5DOQUrSzzqhFu5P', `updated_at` = '2010-02-26 12:31:10', `last_request_at` = '2010-02-26 12:31:10' WHERE `id` = 1[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/edit
+Rendered users/_form (31.0ms)
+Completed in 422ms (View: 172, DB: 94) | 200 OK [http://localhost/account/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-26 12:31:19) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (63.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'yzdrXHAX9GY5Y_67OKwW', `updated_at` = '2010-02-26 12:31:20', `last_request_at` = '2010-02-26 12:31:20' WHERE `id` = 1[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 329ms (View: 16, DB: 204) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-02-26 12:35:49) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;35;1mUser Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'pWEymhaYVZOCVw4u2lic', `updated_at` = '2010-02-26 12:35:50', `last_request_at` = '2010-02-26 12:35:50' WHERE `id` = 1[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/edit
+Rendered users/_form (0.0ms)
+Completed in 422ms (View: 16, DB: 109) | 200 OK [http://localhost/account/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-02-26 12:35:59) [PUT]
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "login"=>"epic_swell@yahoo.ie"}, "commit"=>"Update", "action"=>"update", "_method"=>"put", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"users"}
+  [4;36;1mUser Columns (63.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'AbIZa68ScoyrZtntuvaf', `updated_at` = '2010-02-26 12:35:59', `last_request_at` = '2010-02-26 12:35:59' WHERE `id` = 1[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '23990ea2fdb65daece4b37e2446b816ca1d340320212170ed1a39549cc815f8ed112832bbb56dda8bee340a716b573095a3071291fd95fbb39b5515dd3e3f52f' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mUser Update (16.0ms)[0m   [0;1mUPDATE `users` SET `login_count` = 4, `persistence_token` = '23990ea2fdb65daece4b37e2446b816ca1d340320212170ed1a39549cc815f8ed112832bbb56dda8bee340a716b573095a3071291fd95fbb39b5515dd3e3f52f', `perishable_token` = '4CAaObSzAbgBH_ylXQww', `crypted_password` = 'de70a3c946cfb0f26be868bc8b3db283fbe92b315e4a2e0775c64e137f59140764956543948c00ba2bffdbc2d59380ae519eb34203ce6a1d8e4b89e2e41fc66b', `last_login_at` = '2010-02-26 12:30:44', `updated_at` = '2010-02-26 12:35:59', `last_request_at` = '2010-02-26 12:35:59', `current_login_at` = '2010-02-26 12:35:59', `password_salt` = 'W2dg8GJAGfrupeZMZp2P' WHERE `id` = 1[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 344ms (DB: 204) | 302 Found [http://localhost/account]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-26 12:35:59) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = '90WdD-xpbEHdS0rSt6ks', `updated_at` = '2010-02-26 12:35:59', `last_request_at` = '2010-02-26 12:35:59' WHERE `id` = 1[0m
+  [4;36;1mSQL (79.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 187ms (View: 15, DB: 111) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-02-26 12:36:36) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'jjBH374oT5IhsH4mKjMl', `updated_at` = '2010-02-26 12:36:36', `last_request_at` = '2010-02-26 12:36:36' WHERE `id` = 1[0m
+  [4;35;1mSQL (79.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 219ms (DB: 110) | 302 Found [http://localhost/users/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-26 12:36:36) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'HYMvlpYh2lYpqB3s1912', `updated_at` = '2010-02-26 12:36:36', `last_request_at` = '2010-02-26 12:36:36' WHERE `id` = 1[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 187ms (View: 0, DB: 108) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-26 12:37:21) [GET]
+
+ActionController::RoutingError (No route matches "/user_session/destroy" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-26 12:37:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = '2HGwrWmasb8rYGzH0XIJ', `updated_at` = '2010-02-26 12:37:29', `last_request_at` = '2010-02-26 12:37:29' WHERE `id` = 1[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 235ms (DB: 141) | 302 Found [http://localhost/user_session/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-26 12:37:29) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (31.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'H56SeCBIgolOUbyydncx', `updated_at` = '2010-02-26 12:37:29', `last_request_at` = '2010-02-26 12:37:29' WHERE `id` = 1[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 188ms (View: 0, DB: 125) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#show to destroy (for 127.0.0.1 at 2010-02-26 12:38:04) [GET]
+  Parameters: {"format"=>"destroy", "action"=>"show", "controller"=>"user_sessions"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-26 12:38:22) [GET]
+
+ActionController::RoutingError (No route matches "/user_session/users" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#show (for 127.0.0.1 at 2010-02-26 12:41:46) [GET]
+  Parameters: {"action"=>"show", "controller"=>"user_sessions"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-26 12:41:51) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = '-x3V0WfF-6pX_2ALslNb', `updated_at` = '2010-02-26 12:41:52', `last_request_at` = '2010-02-26 12:41:52' WHERE `id` = 1[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 235ms (DB: 172) | 302 Found [http://localhost/user_session/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-26 12:41:52) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = '__svXUHKGz4lt1BSuXxB', `updated_at` = '2010-02-26 12:41:52', `last_request_at` = '2010-02-26 12:41:52' WHERE `id` = 1[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 172ms (View: 0, DB: 94) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-02-26 12:41:57) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (203.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = '37lsIhMCyi78OTe4FbX9', `updated_at` = '2010-02-26 12:41:58', `last_request_at` = '2010-02-26 12:41:58' WHERE `id` = 1[0m
+  [4;35;1mSQL (79.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/edit
+Rendered users/_form (0.0ms)
+Completed in 422ms (View: 31, DB: 329) | 200 OK [http://localhost/account/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-26 12:42:00) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'Mj9leMqTywTWXe7A_b_8', `updated_at` = '2010-02-26 12:42:00', `last_request_at` = '2010-02-26 12:42:00' WHERE `id` = 1[0m
+  [4;36;1mSQL (140.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 422ms (View: 16, DB: 172) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-02-26 12:53:03) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'a_ayK4YIDs2WCiaAaFIM', `updated_at` = '2010-02-26 12:53:03', `last_request_at` = '2010-02-26 12:53:03' WHERE `id` = 1[0m
+  [4;35;1mSQL (110.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/edit
+Rendered users/_form (16.0ms)
+Completed in 469ms (View: 78, DB: 157) | 200 OK [http://localhost/account/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-26 12:53:06) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = '59du09N3BH_O0uy7td92', `updated_at` = '2010-02-26 12:53:06', `last_request_at` = '2010-02-26 12:53:06' WHERE `id` = 1[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 297ms (View: 16, DB: 125) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2010-02-26 12:55:31) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+Rendering password_resets/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/password_resets/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-02-26 12:55:43) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"password_resets", "email"=>"epic_swell@yahoo.ie"}
+  [4;35;1mUser Columns (94.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'epic_swell@yahoo.ie') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'CXT79JnP3oxovOgcDVxS', `updated_at` = '2010-02-26 12:55:44' WHERE `id` = 1[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCOMMIT[0m
+Sent mail to epic_swell@yahoo.ie
+
+Date: Fri, 26 Feb 2010 12:55:44 +0000
+To: epic_swell@yahoo.ie
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+A request to reset your password has been made.
+If you did not make this request, simply ignore this email.
+If you did make this request just click the link below:
+
+http://localhost:3000/password_resets/CXT79JnP3oxovOgcDVxS/edit
+
+If the above URL does not work try copying and pasting it into your browser.
+If you continue to have problem please feel free to contact us.
+
+
+Net::SMTPServerBusy (421 4.4.5 Server busy, try again later. (mx.google.com) p10sm30277300gvf.21
+):
+  C:/Ruby/lib/ruby/1.8/net/smtp.rb:679:in `check_response'
+  app/models/user.rb:7:in `deliver_password_reset_instructions!'
+  app/controllers/password_resets_controller.rb:10:in `create'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-02-26 12:55:56) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"password_resets", "email"=>"epic_swell@yahoo.ie"}
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (140.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'epic_swell@yahoo.ie') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'XvJGomlkvyMZsX38FQP0', `updated_at` = '2010-02-26 12:55:56' WHERE `id` = 1[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCOMMIT[0m
+Sent mail to epic_swell@yahoo.ie
+
+Date: Fri, 26 Feb 2010 12:55:56 +0000
+To: epic_swell@yahoo.ie
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+A request to reset your password has been made.
+If you did not make this request, simply ignore this email.
+If you did make this request just click the link below:
+
+http://localhost:3000/password_resets/XvJGomlkvyMZsX38FQP0/edit
+
+If the above URL does not work try copying and pasting it into your browser.
+If you continue to have problem please feel free to contact us.
+
+Redirected to http://localhost:3000/
+Completed in 2547ms (DB: 281) | 302 Found [http://localhost/password_resets]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit (for 127.0.0.1 at 2010-02-26 12:57:41) [GET]
+  Parameters: {"action"=>"edit", "id"=>"XvJGomlkvyMZsX38FQP0", "controller"=>"password_resets"}
+  [4;35;1mUser Columns (46.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (perishable_token = 'XvJGomlkvyMZsX38FQP0' and updated_at > '2010-02-26 12:47:41') LIMIT 1[0m
+Rendering password_resets/edit
+Completed in 141ms (View: 16, DB: 61) | 200 OK [http://localhost/password_resets/XvJGomlkvyMZsX38FQP0/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#update (for 127.0.0.1 at 2010-02-26 12:57:51) [PUT]
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Update my password and log me in", "action"=>"update", "_method"=>"put", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "id"=>"XvJGomlkvyMZsX38FQP0", "controller"=>"password_resets"}
+  [4;35;1mUser Columns (63.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (perishable_token = 'XvJGomlkvyMZsX38FQP0' and updated_at > '2010-02-26 12:47:51') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'ebff4609a6b370d03c762fcf73e2eda8e3e4e249557ad5252d13cffad4ee748f501d52c8aa0a293a32c06c9b7589c78226838aaa1cb6356a8009fd1d3a090e9f' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `login_count` = 5, `persistence_token` = 'ebff4609a6b370d03c762fcf73e2eda8e3e4e249557ad5252d13cffad4ee748f501d52c8aa0a293a32c06c9b7589c78226838aaa1cb6356a8009fd1d3a090e9f', `perishable_token` = '8Psm8GUgkhB-dqzEjaO2', `crypted_password` = '33c5b886d27ecb69080b7b8507feecb3e9a870de584ab2cf43a06c1afa175c9c1674fbd40874062f83716b408a857004882721ff826b512126cf1825eb62221f', `last_login_at` = '2010-02-26 12:35:59', `updated_at` = '2010-02-26 12:57:51', `last_request_at` = '2010-02-26 12:57:51', `current_login_at` = '2010-02-26 12:57:51', `password_salt` = 'LdWqq5D8TqZOpTh8j6iw' WHERE `id` = 1[0m
+  [4;35;1mSQL (203.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 390ms (DB: 266) | 302 Found [http://localhost/password_resets/XvJGomlkvyMZsX38FQP0]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-26 12:57:51) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (94.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'LNMkqhRHOX7LUzh2o_-n', `updated_at` = '2010-02-26 12:57:51', `last_request_at` = '2010-02-26 12:57:51' WHERE `id` = 1[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 281ms (View: 15, DB: 219) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-26 12:59:53) [GET]
+
+ActionController::RoutingError (No route matches "/user_session/destroy" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-26 13:00:05) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'WI6vJrYsW_ErJFKtfb_l', `updated_at` = '2010-02-26 13:00:05', `last_request_at` = '2010-02-26 13:00:05' WHERE `id` = 1[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 203ms (DB: 78) | 302 Found [http://localhost/user_session/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-26 13:00:05) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (32.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'JEZtyN3KxWOSDmHaTzBa', `updated_at` = '2010-02-26 13:00:05', `last_request_at` = '2010-02-26 13:00:05' WHERE `id` = 1[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 187ms (View: 16, DB: 110) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-26 13:04:17) [GET]
+
+ActionController::RoutingError (No route matches "/user_session/show" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-26 13:04:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (63.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'R88obkTBi_Bg4y5Gfhqg', `updated_at` = '2010-02-26 13:04:45', `last_request_at` = '2010-02-26 13:04:45' WHERE `id` = 1[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 281ms (DB: 125) | 302 Found [http://localhost/user_session/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-26 13:04:46) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = '3SBntPVZGdG1rik7PyVM', `updated_at` = '2010-02-26 13:04:46', `last_request_at` = '2010-02-26 13:04:46' WHERE `id` = 1[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 219ms (View: 0, DB: 124) | 200 OK [http://localhost/account]
