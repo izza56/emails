@@ -1737,3 +1737,249 @@ Processing UsersController#show (for 127.0.0.1 at 2010-02-26 13:04:46) [GET]
 Rendering template within layouts/users
 Rendering users/show
 Completed in 219ms (View: 0, DB: 124) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (125.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2010-02-26 15:46:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+Rendering password_resets/new
+Completed in 375ms (View: 359, DB: 125) | 200 OK [http://localhost/password_resets/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-02-26 15:46:27) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"password_resets", "email"=>"epic_swell@yahoo.ie"}
+  [4;36;1mUser Columns (485.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (234.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'epic_swell@yahoo.ie') LIMIT 1[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (313.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'LmCk0XLY8Ccc1JqPBp99', `updated_at` = '2010-02-26 15:46:29' WHERE `id` = 1[0m
+  [4;36;1mSQL (359.0ms)[0m   [0;1mCOMMIT[0m
+Sent mail to epic_swell@yahoo.ie
+
+Date: Fri, 26 Feb 2010 15:46:30 +0000
+To: epic_swell@yahoo.ie
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+A request to reset your password has been made.
+If you did not make this request, simply ignore this email.
+If you did make this request just click the link below:
+
+http://localhost:3000/password_resets/LmCk0XLY8Ccc1JqPBp99/edit
+
+If the above URL does not work try copying and pasting it into your browser.
+If you continue to have problem please feel free to contact us.
+
+
+Net::SMTPAuthenticationError (535-5.7.1 Username and Password not accepted. Learn more at                   
+535 5.7.1 http://mail.google.com/support/bin/answer.py?answer=14257 t12sm709689gvd.7
+):
+  C:/Ruby/lib/ruby/1.8/net/smtp.rb:576:in `auth_plain'
+  C:/Ruby/lib/ruby/1.8/net/smtp.rb:570:in `__send__'
+  C:/Ruby/lib/ruby/1.8/net/smtp.rb:570:in `authenticate'
+  app/models/user.rb:7:in `deliver_password_reset_instructions!'
+  app/controllers/password_resets_controller.rb:10:in `create'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (140.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-02-26 15:47:08) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"password_resets", "email"=>"epic_swell@yahoo.ie"}
+  [4;35;1mUser Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (172.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'epic_swell@yahoo.ie') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 's-EE_Y1N02tgdgNmqmCa', `updated_at` = '2010-02-26 15:47:08' WHERE `id` = 1[0m
+  [4;35;1mSQL (125.0ms)[0m   [0mCOMMIT[0m
+Sent mail to epic_swell@yahoo.ie
+
+Date: Fri, 26 Feb 2010 15:47:08 +0000
+To: epic_swell@yahoo.ie
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+A request to reset your password has been made.
+If you did not make this request, simply ignore this email.
+If you did make this request just click the link below:
+
+http://localhost:3000/password_resets/s-EE_Y1N02tgdgNmqmCa/edit
+
+If the above URL does not work try copying and pasting it into your browser.
+If you continue to have problem please feel free to contact us.
+
+
+Net::SMTPAuthenticationError (535-5.7.1 Username and Password not accepted. Learn more at                   
+535 5.7.1 http://mail.google.com/support/bin/answer.py?answer=14257 p10sm731654gvf.6
+):
+  C:/Ruby/lib/ruby/1.8/net/smtp.rb:576:in `auth_plain'
+  C:/Ruby/lib/ruby/1.8/net/smtp.rb:570:in `__send__'
+  C:/Ruby/lib/ruby/1.8/net/smtp.rb:570:in `authenticate'
+  app/models/user.rb:7:in `deliver_password_reset_instructions!'
+  app/controllers/password_resets_controller.rb:10:in `create'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2010-02-26 15:47:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+Rendering password_resets/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/password_resets/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-02-26 15:47:24) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"password_resets", "email"=>"epic_swell@yahoo.ie"}
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (31.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'epic_swell@yahoo.ie') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'P6TcBwa0jPnP-BHXJL16', `updated_at` = '2010-02-26 15:47:24' WHERE `id` = 1[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+Sent mail to epic_swell@yahoo.ie
+
+Date: Fri, 26 Feb 2010 15:47:25 +0000
+To: epic_swell@yahoo.ie
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+A request to reset your password has been made.
+If you did not make this request, simply ignore this email.
+If you did make this request just click the link below:
+
+http://localhost:3000/password_resets/P6TcBwa0jPnP-BHXJL16/edit
+
+If the above URL does not work try copying and pasting it into your browser.
+If you continue to have problem please feel free to contact us.
+
+
+Net::SMTPAuthenticationError (535-5.7.1 Username and Password not accepted. Learn more at                   
+535 5.7.1 http://mail.google.com/support/bin/answer.py?answer=14257 p10sm732617gvf.6
+):
+  C:/Ruby/lib/ruby/1.8/net/smtp.rb:576:in `auth_plain'
+  C:/Ruby/lib/ruby/1.8/net/smtp.rb:570:in `__send__'
+  C:/Ruby/lib/ruby/1.8/net/smtp.rb:570:in `authenticate'
+  app/models/user.rb:7:in `deliver_password_reset_instructions!'
+  app/controllers/password_resets_controller.rb:10:in `create'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (234.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2010-02-26 15:47:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+Rendering password_resets/new
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://localhost/password_resets/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-02-26 15:48:01) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "controller"=>"password_resets", "email"=>"epic_swell@yahoo.ie"}
+  [4;36;1mUser Columns (109.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (63.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'epic_swell@yahoo.ie') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (31.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'jZloZRADrdMQwqy6oBTh', `updated_at` = '2010-02-26 15:48:02' WHERE `id` = 1[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCOMMIT[0m
+Sent mail to epic_swell@yahoo.ie
+
+Date: Fri, 26 Feb 2010 15:48:02 +0000
+To: epic_swell@yahoo.ie
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+A request to reset your password has been made.
+If you did not make this request, simply ignore this email.
+If you did make this request just click the link below:
+
+http://localhost:3000/password_resets/jZloZRADrdMQwqy6oBTh/edit
+
+If the above URL does not work try copying and pasting it into your browser.
+If you continue to have problem please feel free to contact us.
+
+Redirected to http://localhost:3000/
+Completed in 3891ms (DB: 266) | 302 Found [http://localhost/password_resets]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit (for 127.0.0.1 at 2010-02-26 15:48:33) [GET]
+  Parameters: {"action"=>"edit", "id"=>"jZloZRADrdMQwqy6oBTh", "controller"=>"password_resets"}
+  [4;35;1mUser Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (32.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (perishable_token = 'jZloZRADrdMQwqy6oBTh' and updated_at > '2010-02-26 15:38:34') LIMIT 1[0m
+Rendering password_resets/edit
+Completed in 1094ms (View: 47, DB: 110) | 200 OK [http://localhost/password_resets/jZloZRADrdMQwqy6oBTh/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#update (for 127.0.0.1 at 2010-02-26 15:48:41) [PUT]
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Update my password and log me in", "action"=>"update", "_method"=>"put", "authenticity_token"=>"r17D4qlYbQZr3aSoxQ+tFUWRK2ooxzYj4TO8JoIWvZQ=", "id"=>"jZloZRADrdMQwqy6oBTh", "controller"=>"password_resets"}
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (perishable_token = 'jZloZRADrdMQwqy6oBTh' and updated_at > '2010-02-26 15:38:41') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (47.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'd576ecd48e8b47b0265ef2e58e6ff8066461e9230e7324d54bbffde0bbbcfe65b2ef8bf3d20b4c12b3c7479ff13ea8babc05ad6eb87a081bd6b502a2d8b36fcb' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mUser Update (16.0ms)[0m   [0;1mUPDATE `users` SET `login_count` = 6, `persistence_token` = 'd576ecd48e8b47b0265ef2e58e6ff8066461e9230e7324d54bbffde0bbbcfe65b2ef8bf3d20b4c12b3c7479ff13ea8babc05ad6eb87a081bd6b502a2d8b36fcb', `perishable_token` = 'i2w77hdVBKAezE3ZzVKO', `crypted_password` = '3b52a2582b5eac9c28a2417e9080c199ed0524539c77d8a7bc98046b17ff0e7659850e3301fd232170c692b11eb1ad1da89994688e289f53c4f7c30f874c6c43', `last_login_at` = '2010-02-26 12:57:51', `updated_at` = '2010-02-26 15:48:41', `last_request_at` = '2010-02-26 15:48:41', `current_login_at` = '2010-02-26 15:48:41', `password_salt` = 'IrCRzHLrAlvdot3ouzD8' WHERE `id` = 1[0m
+  [4;35;1mSQL (109.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 390ms (DB: 219) | 302 Found [http://localhost/password_resets/jZloZRADrdMQwqy6oBTh]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-26 15:48:42) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (63.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (16.0ms)[0m   [0mUPDATE `users` SET `perishable_token` = '0QOQ9Tbyt8dpFFr07gOW', `updated_at` = '2010-02-26 15:48:42', `last_request_at` = '2010-02-26 15:48:42' WHERE `id` = 1[0m
+  [4;36;1mSQL (187.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 422ms (View: 63, DB: 281) | 200 OK [http://localhost/account]
