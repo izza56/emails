@@ -18,7 +18,7 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: emails_development
+  database: emaildb
   pool: 5
   username: root
   password: password
