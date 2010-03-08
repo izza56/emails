@@ -4983,3 +4983,1353 @@ Rendering template within layouts/users
 Rendering users/new
 Rendered users/_form (218.8ms)
 Completed in 1547ms (View: 656, DB: 0) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (188.0ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (344.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100224171415)
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `crypted_password` varchar(255), `password_salt` varchar(255), `persistence_token` varchar(255), `login_count` int(11), `last_request_at` datetime, `last_login_at` datetime, `current_login_at` datetime, `last_login_ip` varchar(255), `current_login_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100224171415')[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100224171415)
+Migrating to AddUsersPasswordResetFields (20100226104223)
+  [4;36;1mSQL (421.0ms)[0m   [0;1mALTER TABLE `users` ADD `perishable_token` varchar(255) DEFAULT '' NOT NULL[0m
+  [4;35;1mSQL (204.0ms)[0m   [0mALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL[0m
+  [4;36;1mSQL (187.0ms)[0m   [0;1mCREATE INDEX `index_users_on_perishable_token` ON `users` (`perishable_token`)[0m
+  [4;35;1mSQL (265.0ms)[0m   [0mCREATE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100226104223')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 14:22:35) [GET]
+  Parameters: {"action"=>"show", "id"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'emaildb.movies' doesn't exist: SHOW FIELDS FROM `movies`[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'emaildb.movies' doesn't exist: SHOW FIELDS FROM `movies`):
+  app/controllers/movies_controller.rb:16:in `show'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100224171415)
+Migrating to AddUsersPasswordResetFields (20100226104223)
+Migrating to CreateMovies (20100308142112)
+  [4;36;1mSQL (312.0ms)[0m   [0;1mCREATE TABLE `movies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `duration` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (125.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100308142112')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mdescribe `movies`[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSHOW KEYS FROM `movies`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 14:23:27) [GET]
+  Parameters: {"action"=>"show", "id"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (78.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Movie with ID=index):
+  app/controllers/movies_controller.rb:16:in `show'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (266.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 14:25:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (15.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 297ms (View: 266, DB: 15) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-03-08 14:25:09) [GET]
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;36;1mMovie Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 78ms (View: 46, DB: 0) | 200 OK [http://localhost/movies/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-03-08 14:25:19) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"5h5GW1fxw9N0DTA0UaJzJOfWOCL4u49fmss/tKXt0Ms=", "movie"=>{"title"=>"The Grinch", "id"=>"1", "duration"=>"110"}, "controller"=>"movies"}
+  [4;35;1mMovie Columns (109.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (93.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Create (32.0ms)[0m   [0mINSERT INTO `movies` (`updated_at`, `title`, `duration`, `created_at`) VALUES('2010-03-08 14:25:19', 'The Grinch', 110, '2010-03-08 14:25:19')[0m
+  [4;36;1mSQL (156.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/movies/1
+Completed in 422ms (DB: 390) | 302 Found [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 14:25:19) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"movies"}
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (47.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 1) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 110ms (View: 16, DB: 78) | 200 OK [http://localhost/movies/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 14:25:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 79ms (View: 32, DB: 31) | 200 OK [http://localhost/movies/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-03-08 14:25:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;35;1mMovie Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 141ms (View: 63, DB: 47) | 200 OK [http://localhost/movies/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-03-08 14:25:36) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"5h5GW1fxw9N0DTA0UaJzJOfWOCL4u49fmss/tKXt0Ms=", "movie"=>{"title"=>"The Terminator", "id"=>"2", "duration"=>"130"}, "controller"=>"movies"}
+  [4;36;1mMovie Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (16.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMovie Create (0.0ms)[0m   [0;1mINSERT INTO `movies` (`updated_at`, `title`, `duration`, `created_at`) VALUES('2010-03-08 14:25:36', 'The Terminator', 130, '2010-03-08 14:25:36')[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/movies/2
+Completed in 235ms (DB: 125) | 302 Found [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 14:25:37) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"movies"}
+  [4;36;1mMovie Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (47.0ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 2) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 141ms (View: 31, DB: 78) | 200 OK [http://localhost/movies/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 14:25:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 125ms (View: 63, DB: 31) | 200 OK [http://localhost/movies/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-03-08 14:25:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;36;1mMovie Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 94ms (View: 47, DB: 31) | 200 OK [http://localhost/movies/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-03-08 14:26:04) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"5h5GW1fxw9N0DTA0UaJzJOfWOCL4u49fmss/tKXt0Ms=", "movie"=>{"title"=>"My Left Foot", "id"=>"3", "duration"=>"85"}, "controller"=>"movies"}
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (15.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Create (0.0ms)[0m   [0mINSERT INTO `movies` (`updated_at`, `title`, `duration`, `created_at`) VALUES('2010-03-08 14:26:04', 'My Left Foot', 85, '2010-03-08 14:26:04')[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/movies/3
+Completed in 141ms (DB: 109) | 302 Found [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 14:26:05) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"movies"}
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (63.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 3) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 125ms (View: 0, DB: 94) | 200 OK [http://localhost/movies/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 14:26:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-03-08 14:26:08) [GET]
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;35;1mMovie Columns (32.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 78ms (View: 31, DB: 32) | 200 OK [http://localhost/movies/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 14:26:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 125ms (View: 79, DB: 31) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-03-08 14:26:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;36;1mMovie Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 62ms (View: 31, DB: 16) | 200 OK [http://localhost/movies/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-03-08 14:26:40) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"5h5GW1fxw9N0DTA0UaJzJOfWOCL4u49fmss/tKXt0Ms=", "movie"=>{"title"=>"Avatar", "id"=>"4", "duration"=>"182"}, "controller"=>"movies"}
+  [4;35;1mMovie Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (16.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Create (0.0ms)[0m   [0mINSERT INTO `movies` (`updated_at`, `title`, `duration`, `created_at`) VALUES('2010-03-08 14:26:40', 'Avatar', 182, '2010-03-08 14:26:40')[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/movies/4
+Completed in 156ms (DB: 125) | 302 Found [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 14:26:41) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"movies"}
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 4) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 281ms (View: 15, DB: 31) | 200 OK [http://localhost/movies/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 14:26:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 172ms (View: 62, DB: 78) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-03-08 14:26:44) [GET]
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 78ms (View: 31, DB: 31) | 200 OK [http://localhost/movies/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-03-08 14:27:06) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"5h5GW1fxw9N0DTA0UaJzJOfWOCL4u49fmss/tKXt0Ms=", "movie"=>{"title"=>"Taxi", "id"=>"5", "duration"=>"135"}, "controller"=>"movies"}
+  [4;36;1mMovie Columns (62.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (63.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMovie Create (0.0ms)[0m   [0;1mINSERT INTO `movies` (`updated_at`, `title`, `duration`, `created_at`) VALUES('2010-03-08 14:27:06', 'Taxi', 135, '2010-03-08 14:27:06')[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/movies/5
+Completed in 235ms (DB: 219) | 302 Found [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 14:27:07) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"movies"}
+  [4;36;1mMovie Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (16.0ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 5) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 47ms (View: 15, DB: 16) | 200 OK [http://localhost/movies/5]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 14:27:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 140ms (View: 94, DB: 31) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMovie Load (47.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+  [4;35;1mMovie Columns (172.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMovie Load (31.0ms)[0m   [0mSELECT * FROM `movies` WHERE (movies.title LIKE '%Grin%') [0m
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (movies.title NOT LIKE '%Grin%') [0m
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE ((movies.duration > 130) AND (movies.title NOT LIKE '%Grin%')) [0m
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE ((movies.duration < 180) AND ((movies.duration > 130) AND (movies.title NOT LIKE '%Grin%'))) [0m
+  [4;35;1mMovie Load (16.0ms)[0m   [0mSELECT * FROM `movies` WHERE (movies.title LIKE '%Left%' OR movies.title LIKE '%Av%') [0m
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (movies.title LIKE '%My%' AND movies.title LIKE '%foot%') [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (movies.title LIKE '%The%') [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE ((movies.title LIKE '%The%') AND (movies.duration < 120)) [0m
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` ORDER BY movies.title ASC[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 14:49:59) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"movies"}
+  [4;36;1mMovie Columns (140.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (31.0ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 1) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 219ms (View: 16, DB: 171) | 200 OK [http://localhost/movies/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 14:50:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (32.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 140ms (View: 93, DB: 32) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 14:57:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (32.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 156ms (View: 108, DB: 32) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 14:57:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 297ms (View: 79, DB: 31) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 14:57:11) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"movies"}
+  [4;36;1mMovie Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (16.0ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 1) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 79ms (View: 0, DB: 47) | 200 OK [http://localhost/movies/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 14:57:13) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 141ms (View: 94, DB: 31) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 15:12:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (31.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 188ms (View: 94, DB: 78) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 15:13:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+ERROR: compiling _run_erb_app47views47movies47index46html46erb RAISED compile error
+C:/Degree/Year IV/Modules/Emerging Tech/Project/development/emails/app/views/movies/index.html.erb:32: syntax error, unexpected kENSURE, expecting kEND
+C:/Degree/Year IV/Modules/Emerging Tech/Project/development/emails/app/views/movies/index.html.erb:34: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47movies47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing movies</h1>\n"
+@output_buffer.concat "\n"
+ form_tag movies_path, :method => 'get' do ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+text_field_tag :search, params[:search]; @output_buffer.concat "\n"
+@output_buffer.concat(( submit_tag "Search", :name => nil ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Id</th>\n"
+@output_buffer.concat "    <th>Title</th>\n"
+@output_buffer.concat "    <th>Duration</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @movies.each do |movie| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h movie.id ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h movie.title ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h movie.duration ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Show', movie ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Edit', edit_movie_path(movie) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', movie, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New movie', new_movie_path ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Degree/Year IV/Modules/Emerging Tech/Project/development/emails/app/views/movies/index.html.erb:34:in `compile!'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Degree/Year IV/Modules/Emerging Tech/Project/development/emails/app/controllers/movies_controller.rb:7:in `index'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+C:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Degree/Year IV/Modules/Emerging Tech/Project/development/emails/app/views/movies/index.html.erb:32: syntax error, unexpected kENSURE, expecting kEND
+C:/Degree/Year IV/Modules/Emerging Tech/Project/development/emails/app/views/movies/index.html.erb:34: syntax error, unexpected $end, expecting kEND) on line #32 of app/views/movies/index.html.erb:
+29: <%= link_to 'New movie', new_movie_path %>
+
+    app/views/movies/index.html.erb:34:in `compile!'
+    app/controllers/movies_controller.rb:7:in `index'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (187.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 15:15:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 15:42:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (63.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (62.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 203ms (View: 63, DB: 125) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 15:42:45) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"movies"}
+  [4;35;1mMovie Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (31.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 4) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 109ms (View: 15, DB: 78) | 200 OK [http://localhost/movies/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-03-08 15:42:49) [GET]
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;35;1mMovie Columns (94.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 125ms (View: 15, DB: 94) | 200 OK [http://localhost/movies/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 15:42:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 157ms (View: 78, DB: 47) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 15:49:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMovie Columns (157.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+
+NoMethodError (undefined method `search' for #<Class:0x4639fbc>):
+  app/controllers/movies_controller.rb:7:in `index'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 15:52:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+
+NoMethodError (undefined method `search' for #<Class:0x4562904>):
+  app/controllers/movies_controller.rb:7:in `index'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (359.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 15:52:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMovie Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+
+NoMethodError (undefined method `search' for #<Class:0x47ddf44>):
+  app/controllers/movies_controller.rb:7:in `index'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-03-08 15:52:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;36;1mMovie Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 94ms (View: 31, DB: 32) | 200 OK [http://localhost/movies/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-03-08 15:52:38) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"5h5GW1fxw9N0DTA0UaJzJOfWOCL4u49fmss/tKXt0Ms=", "movie"=>{"title"=>"Darby OGill and the little people", "id"=>"6", "duration"=>"145"}, "controller"=>"movies"}
+  [4;35;1mMovie Columns (46.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (172.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Create (0.0ms)[0m   [0mINSERT INTO `movies` (`updated_at`, `title`, `duration`, `created_at`) VALUES('2010-03-08 15:52:38', 'Darby OGill and the little people', 145, '2010-03-08 15:52:38')[0m
+  [4;36;1mSQL (234.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/movies/6
+Completed in 500ms (DB: 452) | 302 Found [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 15:52:39) [GET]
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"movies"}
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (16.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 6) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 78ms (View: 0, DB: 47) | 200 OK [http://localhost/movies/6]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 15:52:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMovie Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+
+NoMethodError (undefined method `search' for #<Class:0x46106d0>):
+  app/controllers/movies_controller.rb:7:in `index'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (250.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:12:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (62.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 235ms (View: 126, DB: 93) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-03-08 17:12:36) [POST]
+  Parameters: {"search"=>"Grinch", "commit"=>"Search", "action"=>"create", "authenticity_token"=>"5h5GW1fxw9N0DTA0UaJzJOfWOCL4u49fmss/tKXt0Ms=", "controller"=>"movies"}
+  [4;35;1mMovie Columns (141.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Create (0.0ms)[0m   [0mINSERT INTO `movies` (`updated_at`, `title`, `duration`, `created_at`) VALUES('2010-03-08 17:12:36', NULL, NULL, '2010-03-08 17:12:36')[0m
+  [4;36;1mSQL (204.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/movies/7
+Completed in 484ms (DB: 439) | 302 Found [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 17:12:36) [GET]
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"movies"}
+  [4;35;1mMovie Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (141.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 7) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 234ms (View: 0, DB: 219) | 200 OK [http://localhost/movies/7]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:12:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 172ms (View: 124, DB: 32) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-03-08 17:12:56) [POST]
+  Parameters: {"search"=>"Left", "commit"=>"Search", "action"=>"create", "authenticity_token"=>"5h5GW1fxw9N0DTA0UaJzJOfWOCL4u49fmss/tKXt0Ms=", "controller"=>"movies"}
+  [4;35;1mMovie Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Create (0.0ms)[0m   [0mINSERT INTO `movies` (`updated_at`, `title`, `duration`, `created_at`) VALUES('2010-03-08 17:12:56', NULL, NULL, '2010-03-08 17:12:56')[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/movies/8
+Completed in 187ms (DB: 172) | 302 Found [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 17:12:56) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"movies"}
+  [4;35;1mMovie Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (47.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 8) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 94ms (View: 0, DB: 62) | 200 OK [http://localhost/movies/8]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:13:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 344ms (View: 297, DB: 16) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:14:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (16.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #3 of app/views/movies/index.html.erb:
+1: <h1>Listing movies</h1>
+2: 
+3: <% form_tag movies_path, method => 'get' do %>
+4: <p>
+5: <%= text_field_tag :search %>
+6:   <%= submit_tag "Search" %>
+
+    app/views/movies/index.html.erb:3:in `method'
+    app/views/movies/index.html.erb:3
+    app/controllers/movies_controller.rb:15:in `index'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:15:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 203ms (View: 140, DB: 47) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:15:50) [GET]
+  Parameters: {"search"=>"Left", "commit"=>"Search", "action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (title LIKE '%Left%') [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 125ms (View: 47, DB: 31) | 200 OK [http://localhost/movies?search=Left&commit=Search]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 17:16:12) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"movies"}
+  [4;36;1mMovie Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (16.0ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 3) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 125ms (View: 31, DB: 48) | 200 OK [http://localhost/movies/3]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:16:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (156.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 297ms (View: 110, DB: 156) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:16:21) [GET]
+  Parameters: {"search"=>"Avatar", "commit"=>"Search", "action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (title LIKE '%Avatar%') [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (32.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 109ms (View: 46, DB: 32) | 200 OK [http://localhost/movies?search=Avatar&commit=Search]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-03-08 17:16:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;36;1mMovie Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 93ms (View: 31, DB: 47) | 200 OK [http://localhost/movies/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:16:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 188ms (View: 140, DB: 32) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:16:29) [GET]
+  Parameters: {"search"=>"Tax", "commit"=>"Search", "action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (title LIKE '%Tax%') [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 125ms (View: 16, DB: 78) | 200 OK [http://localhost/movies?search=Tax&commit=Search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:16:30) [GET]
+  Parameters: {"search"=>"", "commit"=>"Search", "action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (title LIKE '%%') [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 172ms (View: 94, DB: 47) | 200 OK [http://localhost/movies?search=&commit=Search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:16:36) [GET]
+  Parameters: {"search"=>"dar", "commit"=>"Search", "action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (title LIKE '%dar%') [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 125ms (View: 31, DB: 78) | 200 OK [http://localhost/movies?search=dar&commit=Search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:18:20) [GET]
+  Parameters: {"search"=>"", "commit"=>"Search", "action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (15.0ms)[0m   [0mSELECT * FROM `movies` WHERE (title LIKE '%%') [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 188ms (View: 110, DB: 78) | 200 OK [http://localhost/movies?search=&commit=Search]
+  [4;35;1mSQL (15.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:18:24) [GET]
+  Parameters: {"search"=>"Term", "commit"=>"Search", "action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (title LIKE '%Term%') [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 79ms (View: 32, DB: 46) | 200 OK [http://localhost/movies?search=Term&commit=Search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:19:42) [GET]
+  Parameters: {"search"=>"Term", "commit"=>"Search", "action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (title LIKE '%Term%') [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (62.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 110ms (View: 32, DB: 62) | 200 OK [http://localhost/movies?search=Term&commit=Search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 17:19:43) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"movies"}
+  [4;35;1mMovie Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (16.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 2) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 94ms (View: 16, DB: 63) | 200 OK [http://localhost/movies/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:19:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 203ms (View: 156, DB: 31) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:19:48) [GET]
+  Parameters: {"search"=>"left", "action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (title LIKE '%left%') [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 93ms (View: 47, DB: 31) | 200 OK [http://localhost/movies?search=left]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:21:40) [GET]
+  Parameters: {"search"=>"left", "action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (title LIKE '%left%') [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 93ms (View: 31, DB: 31) | 200 OK [http://localhost/movies?search=left]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:21:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 172ms (View: 109, DB: 32) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:21:48) [GET]
+  Parameters: {"search"=>"Taxi", "action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (title LIKE '%Taxi%') [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 62ms (View: 15, DB: 16) | 200 OK [http://localhost/movies?search=Taxi]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 17:21:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"movies"}
+  [4;35;1mMovie Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (46.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 5) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 78ms (View: 0, DB: 62) | 200 OK [http://localhost/movies/5]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:21:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 172ms (View: 126, DB: 31) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:25:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (15.0ms)[0m   [0mSELECT * FROM `movies` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 219ms (View: 188, DB: 15) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:25:57) [GET]
+  Parameters: {"search"=>"Grin", "action"=>"index", "controller"=>"movies"}
+
+ArgumentError (Unknown key(s): condition):
+  app/models/movie.rb:5:in `search'
+  app/controllers/movies_controller.rb:5:in `index'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:27:20) [GET]
+  Parameters: {"search"=>"Grin", "action"=>"index", "controller"=>"movies"}
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMovie Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+
+NoMethodError (undefined method `search' for #<Class:0x464059c>):
+  app/controllers/movies_controller.rb:5:in `index'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (157.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:28:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 359ms (View: 281, DB: 47) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:28:32) [GET]
+  Parameters: {"search"=>"Darby", "action"=>"index", "controller"=>"movies"}
+
+ArgumentError (Unknown key(s): condition):
+  app/models/movie.rb:5:in `search'
+  app/controllers/movies_controller.rb:5:in `index'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:29:18) [GET]
+  Parameters: {"search"=>"Darby", "action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (title LIKE '%Darby%') [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (title LIKE '%Darby%') [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 141ms (View: 32, DB: 78) | 200 OK [http://localhost/movies?search=Darby]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:36:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (31.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 204ms (View: 141, DB: 47) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:36:17) [GET]
+  Parameters: {"search"=>"ax", "action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (title LIKE '%ax%') [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (title LIKE '%ax%') [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (46.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 110ms (View: 48, DB: 46) | 200 OK [http://localhost/movies?search=ax]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-03-08 17:36:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;36;1mMovie Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 78ms (View: 15, DB: 47) | 200 OK [http://localhost/movies/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-03-08 17:36:51) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"5h5GW1fxw9N0DTA0UaJzJOfWOCL4u49fmss/tKXt0Ms=", "movie"=>{"title"=>"Up", "id"=>"9", "duration"=>"85"}, "controller"=>"movies"}
+  [4;35;1mMovie Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (16.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Create (0.0ms)[0m   [0mINSERT INTO `movies` (`updated_at`, `title`, `duration`, `created_at`) VALUES('2010-03-08 17:36:51', 'Up', 85, '2010-03-08 17:36:51')[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/movies/9
+Completed in 172ms (DB: 141) | 302 Found [http://localhost/movies]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-03-08 17:36:51) [GET]
+  Parameters: {"action"=>"show", "id"=>"9", "controller"=>"movies"}
+  [4;35;1mMovie Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (15.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 9) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 94ms (View: 16, DB: 62) | 200 OK [http://localhost/movies/9]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:36:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 203ms (View: 156, DB: 31) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:36:59) [GET]
+  Parameters: {"search"=>"up", "action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (title LIKE '%up%') [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (title LIKE '%up%') [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;36;1mMovie Columns (62.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 110ms (View: 32, DB: 62) | 200 OK [http://localhost/movies?search=up]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-03-08 17:37:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM `movies` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/movies
+Rendering movies/index
+  [4;35;1mMovie Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 187ms (View: 140, DB: 16) | 200 OK [http://localhost/movies]
